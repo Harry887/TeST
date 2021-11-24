@@ -2,7 +2,8 @@ import random
 import numpy as np
 import torchvision.transforms as transforms
 import PIL
-
+import PIL.ImageEnhance
+import PIL.ImageDraw
 from PIL import Image, ImageFilter, ImageOps
 from .registry import TRANSFORMS
 
