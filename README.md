@@ -47,7 +47,7 @@ pip install -v -e .  # or "python setup.py develop"
 TeST for CIFAR10 with 250 labels
 
 ```
-python -m torch.distributed.launch --nproc_per_node 4 tst/tools/train_semi.py -d 0-3 -b 64 -f tst/exps/tst/tst_cifar10_dual_exp.py --exp-options  out=outputs/exp/cifar10/250/fixmatch_cifar10_250@5_4x16_tst
+python tst/tools/train_semi.py -d 0-3 -b 64 -f tst/exps/tst/tst_cifar10_dual_exp.py --exp-options  out=outputs/exp/cifar10/250/fixmatch_cifar10_250@5_4x16_tst
 ```
 
 ## Development
