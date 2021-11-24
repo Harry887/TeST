@@ -44,10 +44,16 @@ pip install -v -e .  # or "python setup.py develop"
 
 ## Training
 
-TeST for CIFAR10 with 250 labels
+FixMatch for CIFAR10 with 250 labels
 
 ```
-python tst/tools/train_semi.py -d 0-3 -b 64 -f tst/exps/tst/tst_cifar10_dual_exp.py --exp-options  out=outputs/exp/cifar10/250/fixmatch_cifar10_250@5_4x16_tst
+python tst/tools/train_semi.py -d 0-3 -b 64 -f tst/exps/fixmatch/fixmatch_cifar10_exp.py --exp-options out=outputs/exp/cifar10/250/fixmatch_cifar10_250@5_4x16
+```
+
+TeST for Mini-ImageNet with 4000 labels
+
+```
+python tst/tools/train_semi_tst_dual.py -d 0-3 -b 64 -f tst/exps/tst/tst_miniimagenet_dual_exp.py --exp-options out=outputs/exp/miniimagenet/4000/tst_miniimagenet_4000@5_4x16
 ```
 
 ## Development
