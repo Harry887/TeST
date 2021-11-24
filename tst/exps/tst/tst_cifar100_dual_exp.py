@@ -8,7 +8,7 @@ class Exp(FixMatchExp):
     def __init__(self, batch_size, max_epoch=1024):
         super(Exp, self).__init__(batch_size, max_epoch)
         self.dataset_root = "data"
-        self.transform = "fixmatch_transform"
+        self.transform = "tst_transform"
         self.warmup = 10
         self.window = 10
         self.threshold = 0.95
